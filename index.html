@@ -153,7 +153,7 @@ Embedded Lighthouse
     <li>Emulate CSS media - проверка стилей для печати</li>
 </ul>
 
-<h2>Отладка мобильных браузеров</h2>
+<h2>Отладка экзотики и мобильных браузеров</h2>
 <ul>
     <li>
         Chrome:
@@ -172,6 +172,11 @@ Embedded Lighthouse
             <li>разрешить подключение</li>
             <li>в десктопном браузере в меню "Разработка" должно появиться устройство</li>
         </ul>
+    </li>
+    <li>
+        <button type="button" onclick="loadAndOpenFirebugLite()">
+            Открыть Firebug Lite
+        </button>
     </li>
 </ul>
 
@@ -200,6 +205,12 @@ Embedded Lighthouse
     }
 
     setInterval(myIntervalHandler, 5000);
+
+    function loadAndOpenFirebugLite() {
+        var script = document.createElement('script');
+        script.src = 'https://getfirebug.com/firebug-lite.js#startOpened';
+        document.head.appendChild(script);
+    }
 </script>
 </body>
 </html>
