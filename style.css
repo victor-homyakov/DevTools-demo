@@ -1,0 +1,36 @@
+img {
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(2);
+}
+
+img.scaled {
+    width: 500px;
+}
+
+img.qr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 250px;
+}
+
+img.qr:hover {
+    transform: scale(1);
+}
+
+.img-wrapper {
+    text-align: center;
+}
+
+#inspector-target {
+    background-color: black;
+    color: wheat;
+    font-size: large;
+}
+
+code {
+    white-space: pre-line;
+}
